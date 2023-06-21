@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="utf-8">
+    <title>Sreality Flats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  </head>
+  <body>
+    <!-- <table>
+      <td>Some Title</td>
+      <td><img src="https://d18-a.sdn.cz/d_18/c_img_QL_J4/4ltsId.jpeg?fl=res,400,300,3|shr,,20|jpg,90" alt="flat1"></td>
+    </table> -->
+    <div class="wrapper">
+        {% for post in posts %}
+        <div class="flat">
+          <div class="flat_title">
+            <h2>{{ post.title }}<h2>
+          </div>
+          <div class="flat_image-url">
+            <img src="{{ post.image_url }}" alt="Flat{{loop.index}}">
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </body>
+</html>

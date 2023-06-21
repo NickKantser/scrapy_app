@@ -1,0 +1,20 @@
+.flat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,74,1) 34%, rgba(103,40,101,1) 50%, rgba(94,55,115,1) 65%, rgba(0,212,255,1) 100%);
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.flat_title {
+  margin-right: 50px;
+}
+
+.flat_image-url img {
+  display: block;
+  width: 200px;
+}
