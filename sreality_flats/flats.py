@@ -1,8 +1,11 @@
 from flask import Flask, render_template
 import psycopg2
+import os
+
 app = Flask(__name__)
 
-connection = psycopg2.connect('postgres://elsjbyqx:thpxz1QRoIbx34LqqsgLsAG3kdxCcfGg@lallah.db.elephantsql.com/elsjbyqx')
+DB_URL = os.getenv('DB_URL')
+connection = psycopg2.connect(DB_URL)
 
 @app.route('/')
 def home():
@@ -10,7 +13,6 @@ def home():
         with connection.cursor() as cursor:
             cursor.execute("""SELECT * FROM flats""")
             flats = cursor.fetchmany(100)
-            # print(title)
 
     posts = []
     for flat in flats:

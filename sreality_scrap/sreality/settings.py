@@ -96,8 +96,3 @@ DOWNLOAD_HANDLERS = {
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
-
-# EXTENSIONS = { 'scrapy.extensions.closespider.CloseSpider': 1 }
-
-# CONCURRENT_REQUESTS = 1
-# CLOSESPIDER_ITEMCOUNT = 10
