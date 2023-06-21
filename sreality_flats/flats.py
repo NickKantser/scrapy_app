@@ -12,7 +12,7 @@ def home():
     with connection:
         with connection.cursor() as cursor:
             cursor.execute("""SELECT * FROM flats""")
-            flats = cursor.fetchmany(100)
+            flats = cursor.fetchmany(500)
 
     posts = []
     for flat in flats:
