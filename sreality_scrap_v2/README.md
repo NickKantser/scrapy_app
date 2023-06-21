@@ -1,0 +1,1 @@
+#### Scrape dynamic web page https://www.sreality.cz/hledani/prodej/byty in more elegant way using only scrapy 

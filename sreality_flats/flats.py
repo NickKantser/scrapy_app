@@ -3,13 +3,7 @@ import psycopg2
 app = Flask(__name__)
 
 connection = psycopg2.connect('postgres://elsjbyqx:thpxz1QRoIbx34LqqsgLsAG3kdxCcfGg@lallah.db.elephantsql.com/elsjbyqx')
-#
-#
-#
-# # flats = [
-# # {}
-# # ]
-#
+
 @app.route('/')
 def home():
     with connection:

@@ -1,0 +1,1 @@
+#### Scrape dynamic web page https://www.sreality.cz/hledani/prodej/byty using scrapy-playwright
